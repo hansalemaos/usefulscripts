@@ -1,13 +1,13 @@
 echo "Name of new env: "
-call userInput.bat envname
+call userinput.bat envname
 echo %envname%
 
 echo "Python version: "
-call userInput.bat pyversion
+call userinput.bat pyversion
 echo %pyversion%
 
 echo "Packages to install: "
-call userInput.bat packages
+call userinput.bat packages
 echo %packages%
 
 call conda create -y -n %envname% python=%pyversion% pip %packages%
